@@ -1,0 +1,5 @@
+# config.yaml
+
+input_audio_file: 'input/VID20231001005757_khaosarn_rd.mp4'
+output_vocal_file: 'output/vocals/en-khaosarn-rd-vocals.wav'
+output_background_file: 'output/background/en-khaosarn-rd-background.wav'
