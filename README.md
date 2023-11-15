@@ -43,10 +43,14 @@ I could use Docker to containerize the module, so that the module can be orchest
 3. Adaptability to different vdo sources
    
 There are many things I can do so that the module can adapt to different vdo sources, for example;
+
     • add input interfaces e.g. via microphone
+    
     • add a snippet to detect file type
+    
     • define default configuration and accept audio format parameters as argument 
       (def separate_vocals_background(input_file, output_vocal, output_background, audio_format='mp3'):
+      
     • provide error handling or unsupported format
 
 To be part of a larger pipeline, we should also add testing and security concerns.
