@@ -30,15 +30,15 @@ Potential improvements
 2. Add error handling (e.g. input and output format validation)
 3. Add unit test
 
-If this audio separation module is to be integrated into a larger speech-to-text pipeline, considering factors like real-time processing, scalability, and adaptability to different video sources, here are what to be discussed;
+If this audio separation module is to be integrated into a larger speech-to-text pipeline, it could be done as a pre-processing step before feeding the clean audio to the STT engine. The pipeline script can call the audio separation module as a function and then call the STT engine. Here are the aspects to be discussed;
 
 1. Real-time processing
    
-Then the module should have streaming capabilities. Certainly the choices of input interface should be enhanced. Latency should be low. And perhaps we should consider some forms of paralellization or distributed processing.
+Then the module should have streaming capabilities. With streaming processing technique like chunking should keep latency low. The pre-trained model seems to be a good option for real-time processing, though further speed-optimization, or quantization, might be needed. And even GPU is not needed but it ofcourse makes the inference faster. And perhaps we should consider some forms of paralellization or distributed processing.
 
 2. Scalability
    
-I could use Docker to containerize the module, so that the module can be orchestrated with others via Kubernetes, and can be scaled based on demands.
+I could use Docker to containerize the module, so that the module can be orchestrated with other modules via Kubernetes, and can be scaled based on demands.
 
 3. Adaptability to different vdo sources
    
@@ -54,4 +54,6 @@ There are many things I can do so that the module can adapt to different vdo sou
     • provide error handling or unsupported format
 
 To be part of a larger pipeline, we should also add testing and security concerns.
+
+Credits: According to chatGPT's Terms of Use, I own the Input and the Output. Therefore I could credit myself.
 
