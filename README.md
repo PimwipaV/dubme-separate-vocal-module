@@ -1,8 +1,8 @@
 # Dubme-separate-vocal-module
 
-First of all, taking into account that the task of separating vocals from background is for STT improvement, I figured out that the most disruptive background noises to STT systems could be e.g. white noises, music with lyrics, background conversations, or traffic noise.
+First of all, taking into account that the task of separating vocals from background is for STT improvement, I figured out that the most disruptive background noises to STT systems could be e.g. cross talks, background conversations, music with lyrics, or traffic noise.
 
-I didn’t want to spend too much time searching for “bad sound quality” vdos on youtube as I found out most of the search results already have clear vocals and good result for STT systems. So I looked through my own vdos and found a few with conversations over background music.
+After a while of searching on youtube for such vdos, I found out that most of the search results already have clear vocals and good result for STT systems, or only the background noise. So I looked through my own vdos and found a few with conversations over background music.
 
 I did some research on librosa and classical digital signal processing methods. There are many steps and transformations involved. It was interesting and have various tricks to play with, but only if I had enough time to understand and execute all of them.
 
