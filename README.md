@@ -17,6 +17,8 @@ My vocal separation module can be found in this repo. Here is how to use it.
 
 Then you will find the separated vocal and background tracks (.wav) at the paths you specified.
 
+## Evaluation
+
 In evaluation.ipynb, I demonstrate the effectiveness of my solution by running a google STT on the original and cleaned audio tracks and compare transcription accuracy. We can see a slight improvement in WER from 3.08% to 2.97% and considerable improvement on F1 Score from 0.39 to 0.49.
 
 Limitations
@@ -29,6 +31,8 @@ Potential improvements
 1. Add logging
 2. Add error handling (e.g. input and output format validation)
 3. Add unit test
+
+## Bonus
 
 If this audio separation module is to be integrated into a larger speech-to-text pipeline, it could be done as a pre-processing step before feeding the clean audio to the STT engine. The pipeline script can call the audio separation module as a function and then call the STT engine. Here are the aspects to be discussed;
 
