@@ -20,7 +20,7 @@ Then you will find the separated vocal and background tracks (.wav) at the paths
 In evaluation.ipynb, I demonstrate the effectiveness of my solution by running a google STT on the original and cleaned audio tracks and compare transcription accuracy. We can see a slight improvement in WER from 3.08% to 2.97% and considerable improvement on F1 Score from 0.39 to 0.49.
 
 Limitations
-1. dependency on Spleeter, especially the output file structure managed by Spleeter (tmp/input_audio/vocals.wav)
+1. dependency on Spleeter, especially the output file structure managed by Spleeter (tmp/input_audio/vocals.wav), and its input length limit of 10 minutes
 2. fixed input interface (file upload only, no microphone input or live stream)
 3. fixed output format (.wav only)
 
