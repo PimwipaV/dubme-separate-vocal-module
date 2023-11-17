@@ -58,6 +58,3 @@ There are many things I can do so that the module can adapt to different vdo sou
     • provide error handling or unsupported format
 
 To be part of a larger pipeline, we should also add testing and security concerns.
-
-Credits: According to chatGPT's Terms of Use, I own the Input and the Output. Therefore I could credit myself.
-
